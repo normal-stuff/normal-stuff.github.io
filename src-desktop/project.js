@@ -3147,6 +3147,14 @@ require = function a(_0x1b1cd5, _0x105039, _0x129ee2) {
                 }
             }, {
                 'key': _0xb7e5('0x37a'), 'value': function (_0x57f301, _0x57e68b, _0x5a49b4) {
+                    // console.log(_0x57f301)
+                    // console.log(_0x57e68b)
+                    // console.log(_0x5a49b4)
+                    if (_0x5a49b4) {
+                        var curScore = window.localStorage.getItem('highestScore')
+                        curScore = curScore ? parseInt(curScore) : 0
+                        window.localStorage.setItem('highestScore', Math.max(curScore, _0x57f301) + "")
+                    }
                     if (this[_0xb7e5('0x364')] && this['didLoadHighScores']()) {
                         var _0x3d71e1 = this[_0xb7e5('0x363')]['getBoolValue'](_0xbcbc14[_0xb7e5('0x393')]);
                         this['mLastScore'] = _0x57f301, this[_0xb7e5('0x36c')] = !0x1;
